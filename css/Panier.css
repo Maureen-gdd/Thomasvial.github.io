@@ -1,0 +1,123 @@
+
+ @import url(https://fr.allfont.net/allfont.css?fonts=montserrat);
+ @import url(https://fr.allfont.net/allfont.css?fonts=abril-fatface);
+
+* {
+    font-family: 'Montserrat';
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* Tête de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+    background-color: burlywood;
+}
+
+header.header img {
+    width: 150 px;
+}
+
+section.top-page {
+    
+    background-size: cover;
+    height: 10vh;
+    padding-left: 10px;
+}
+
+/* Page de bienvenue (landing page */
+
+.landing-page {
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: green;
+    font-size: 60px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 2000;
+}
+
+.scroll-down {
+    color: green;
+    text-decoration: none;
+    position: absolute;
+    bottom: 160px;
+}
+
+
+
+/* Menu de navigation déroulant */
+
+nav{
+    width: 100%;
+    background-color: burlywood;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul
+{
+    display: flex; /*Permet aux éléments de la barre d'être alignés*/
+    position: sticky;
+    list-style-type: none;
+    padding-right: 10em;
+}
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px; /*Donne la largeur à la barre de nav*/
+}
+
+nav a:hover{
+    background-color: #F8D862;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #F8D862;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #EAC849;
+}
