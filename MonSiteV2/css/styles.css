@@ -329,14 +329,53 @@ nav > ul li:hover .sous{
 /* Pied de page */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 100px;
+    margin: 2em 6.2em 0em;
+    height: 10em;
+    background-color: #AF8D62;
+}
+
+.fin
+{
+    list-style-type: none;
+    color: white;
+    padding: 1em;
+    position: relative;
+    bottom: 0em;
+
+
+}
+
+.titre_liste
+{
+    font-size: 2em;
+    color: #634C2E;
     font-weight: 600;
 }
 
-footer a.cgv {
+
+.fini
+{
+    display: flex;
+}
+
+footer li {
+    padding-bottom: 0.5em;
+}
+
+.pied
+{
+    height: 2em;
+    background-color: #F8D862;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright, .cgv {
+    color: black;
+    padding: 1em;
     text-decoration: none;
-    color:black;
+    position: relative;
+    bottom: 0.5em;
+
 }
